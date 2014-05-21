@@ -8,6 +8,3 @@ default[:kafka][:node_list][:kafka2] = "192.168.1.11"
 default[:kafka][:node_list][:kafka3] = "192.168.1.12"
 default[:kafka][:hostname] = "kafka1"
 default[:kafka][:num_partitions] = 2
-default[:kafka][:zk_number] = 1
-default[:kafka][:ec2] = false
-default[:kafka][:zk_nodes] = ["kafka1", "kafka2", "kafka3"]

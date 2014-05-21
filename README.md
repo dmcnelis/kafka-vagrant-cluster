@@ -46,4 +46,14 @@ vagrant up
 You should now have a cluster opertating at 192.168.1.10, 192.168.1.11, 192.168.1.12 and be able to start testing
 the cluster in whatever ways you need, i.e. testing replication behavior, leader election, ect.
 
+Now you can create a topic and start producing/consuming from it (You can do this from your host machine if you have kafka extracted locally)
+```
+KAFKA_INSTALL_DIR/bin/kafka-topics.sh --zookeeper 192.168.1.10:2181 --create --topic myTestTopic --partitions 3 --replication-factor 2
+
+KAFKA_INSTALL_DIR/bin/kafka-topics.sh --zookeeper 192.168.1.10:2181 --describe
+```
+
+Note:  This is a BSD 3-Clause license.  Have fun with it
+
+Please let me know any issues you have with getting the initial cluster running.  If you have better clarifications on the instructions feel free to add a pull request.
 
