@@ -2,3 +2,4 @@
 nodes
 Gemfile.lock
 Berksfile.lock
+.vagrant
